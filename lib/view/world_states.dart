@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:covid_tacker/Model/world_states_model.dart';
-import 'package:covid_tacker/Services/Utilites/states_services.dart';
+import 'package:covid_tacker/view/Utilites/states_services.dart';
 import 'package:covid_tacker/view/countries_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
@@ -16,9 +16,10 @@ class WorldStates extends StatefulWidget {
 
 class _WorldStatesState extends State<WorldStates>
     with TickerProviderStateMixin {
-  late final AnimationController _controller =
-      AnimationController(duration: Duration(seconds: 3), vsync: this,)
-        ..repeat();
+  late final AnimationController _controller = AnimationController(
+    duration: Duration(seconds: 3),
+    vsync: this,
+  )..repeat();
 
   @override
   void dispose() {

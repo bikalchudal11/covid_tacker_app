@@ -16,6 +16,7 @@ class DetailScreen extends StatefulWidget {
     required this.active,
     required this.critical,
     required this.todayRecovered,
+    required test,
   }) : super(key: key);
 
   @override
